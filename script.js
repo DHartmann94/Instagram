@@ -1,4 +1,3 @@
-/* --- Render --- */
 function render() {
     let content = document.getElementById('content');
     content.innerHTML = '';
