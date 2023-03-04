@@ -1,0 +1,372 @@
+body {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input {
+    border: none;
+    width: 700px;
+    height: 35px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    color: #D9297F;
+    background-color: white;
+    transition: all 225ms ease-in-out;
+    transform: scale(1.1)
+}
+
+button:hover {
+    color: #c21769;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+    transform: scale(1.2)
+}
+
+/* Scrollbars */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #D9297F;
+}
+
+/* Header */
+.header {
+    z-index: 2;
+    background-color: white;
+    min-height: 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.navigator ul {
+    display: flex;
+}
+
+.navigator ul li {
+    list-style: none;
+    height: 100%;
+}
+
+.header-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: all 225ms ease-in-out;
+    transform: scale(0.8);
+}
+
+.header-img:hover {
+    transition: all 225ms ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.navigator ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all 225ms ease-in-out;
+}
+
+.navigator ul li a:hover {
+    border-bottom: 2px solid #D9297F;
+    transition: all 225ms ease-in-out;
+}
+
+.navigator ul button {
+    margin-right: 20px;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 65px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.dnone {
+    display: none !important;
+}
+
+.active {
+    display: flex !important;
+}
+
+/* Content */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 100px 25px 100px;
+}
+
+.post-container {
+    margin-bottom: 75px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 14%);
+}
+
+.post-center {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    max-width: 880px;
+}
+
+.post-space-between {
+    justify-content: space-between;
+}
+
+.author-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 1px solid #D9297F;
+}
+
+.location-pin {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.comments-column {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    max-width: 880px;
+}
+
+.post-img {
+    width: 900px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.view-likes a {
+    text-decoration: none;
+    color: rgb(150, 147, 147);
+    transition: all 225ms ease-in-out;
+}
+
+.view-likes a:hover {
+    color: #D9297F;
+    transition: all 225ms ease-in-out;
+}
+
+/* Liken */
+.heart-active {
+    display: block;
+}
+
+/* Popup Container IMG */
+.popup-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-img {
+    height: 75vh;
+    object-fit: cover;
+}
+
+.absolute {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.dnone-img {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    height: 200px;
+    padding: 0px 100px 0px 100px;
+    background-color: #223041;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-child ul {
+    padding: 0px;
+}
+
+.footer-child ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.footer-child ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 225ms ease-in-out;
+}
+
+.footer-child ul li a:hover {
+    color: #D9297F;
+    transition: all 225ms ease-in-out;
+}
+
+.footer-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    object-fit: contain;
+    border-radius: 100%;
+    transition: all 225ms ease-in-out;
+    transform: scale(0.8);
+}
+
+.footer-img:hover {
+    transition: all 225ms ease-in-out;
+    transform: scale(1);
+}
+
+@media (max-width: 950px) {
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .logo-img {
+        margin-top: 2px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .navigator {
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .navigator ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigator ul li a {
+        margin-right: 20px;
+
+    }
+
+    /* Content */
+    .content-container {
+        padding: 200px 20px 25px 20px;
+    }
+
+    .post-img {
+        width: 500px;
+    }
+
+    .post-center {
+        padding: 8px;
+        max-width: 480px;
+    }
+
+    .comments-column {
+        padding: 8px;
+        max-width: 480px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+   /* Content */
+   .post-img {
+        width: 250px;
+    }
+    
+    .post-center {
+        padding: 8px;
+        max-width: 220px;
+    }
+
+    .comments-column {
+        padding: 8px;
+        max-width: 220px;
+    }
+}
